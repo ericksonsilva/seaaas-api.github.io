@@ -1,2 +1,2 @@
-seaaas-api.github.io
+SEAaaS API
 ====================
