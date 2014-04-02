@@ -1,10 +1,32 @@
 {
-    "tipo_midia": "Texto",
-    "descricao_midia": "Descricao|Descricao|Descricao|Descricao|",
-    "endpoints": [
-    	{
-    		"endpoint": "GET xico/tripa",
-    		"descricao_endpoint": "DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|"
-    	}
-    ]
+	"midias": [
+		{
+		    "tipo_midia": "Texto",
+		    "descricao_midia": "Descricao|Descricao|Descricao|Descricao|",
+		    "endpoints": [
+		    	{
+		    		"endpoint": "GET xico/tripa",
+		    		"descricao_endpoint": "DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|"
+		    	},
+		    	{
+		    		"endpoint": "GET xico/tripaaaaa",
+		    		"descricao_endpoint": "DescricaoEndpoint"
+		    	}
+		    ]
+		},
+		{
+		    "tipo_midia": "Texto + Video",
+		    "descricao_midia": "Descricao|Descricao|Descricao|Descricao|",
+		    "endpoints": [
+		    	{
+		    		"endpoint": "GET maritan/tripa",
+		    		"descricao_endpoint": "DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|"
+		    	},
+		    	{
+		    		"endpoint": "GET maritan/tripaaaaa",
+		    		"descricao_endpoint": "DescricaoEndpoint"
+		    	}
+		    ]
+		}
+	]
 }
