@@ -2,29 +2,29 @@
 	"midias": [
 		{
 		    "tipo_midia": "Texto",
-		    "descricao_midia": "Descricao|Descricao|Descricao|Descricao|",
+		    "descricao_midia": "Envio de texto puro para tradução.",
 		    "endpoints": [
 		    	{
-		    		"endpoint": "GET xico/tripa",
-		    		"descricao_endpoint": "DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|"
-		    	},
-		    	{
-		    		"endpoint": "GET xico/tripaaaaa",
-		    		"descricao_endpoint": "DescricaoEndpoint"
-		    	}
-		    ]
-		},
-		{
-		    "tipo_midia": "Texto + Video",
-		    "descricao_midia": "Descricao|Descricao|Descricao|Descricao|",
-		    "endpoints": [
-		    	{
-		    		"endpoint": "GET maritan/tripa",
-		    		"descricao_endpoint": "DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|"
-		    	},
-		    	{
-		    		"endpoint": "GET maritan/tripaaaaa",
-		    		"descricao_endpoint": "DescricaoEndpoint"
+		    		"endpoint": "GET /text",
+		    		"descricao_endpoint": "Retorna a URL do vídeo gerado contendo a tradução em LIBRAS.",
+		    		"id_modal": "modal_text",
+		    		"modal": {
+		    			"atualizado_em": "02/04/2014 2:23",
+		    			"endpoint_url": "http://vlibras.lavid.ufpb.br/api/text",
+		    			"parametros": [
+		    				{
+		    					"parametro": "transparencia",
+		    					"descricao": "Define se a glosa será transparente ou opaca.",
+		    					"necessidade": "obrigatório"
+		    				},
+		    				{
+		    					"parametro": "formato_video",
+		    					"descricao": "Define o formato do vídeo a ser gerado.",
+		    					"necessidade": "opcional"
+		    				}
+		    			],
+		    			"exemplo_requisicao": "http://vlibras.lavid.ufpb.br/api/text?transparencia=opaco&formato_video=webm"
+		    		}
 		    	}
 		    ]
 		}
