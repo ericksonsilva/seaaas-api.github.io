@@ -6,33 +6,83 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>SEAaaS - REST API v1.0</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Favicon IE 9 -->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+        <!-- Favicon Outros Navegadores -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+
+        <!-- Favicon iPhone -->
+        <link rel="apple-touch-icon" href="assets/img/favicon.png" />
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>SEAaaS API</p>
+        <header id="pageHeader">
+            <div id="logo"></div>
+        </header>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <div id="pageContainer">
+            <h1 class="sectionTitle">REST API v1.0 Endpoints</h1>
+            <!--
+            <article class="content">
+                <h4>Texto</h4>
+                <p>Timelines are collections of Tweets, ordered with the most recent first.</p>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">GET statuses/mentions_timeline</a></td>
+                        <td>Returns the 20 most recent mentions (tweets containing a users's @screen_name) for the authenticating user. The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com. This method can only return up to 800 tweets. See Working with Timelines for.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">GET statuses/mentions_timeline</a></td>
+                        <td>Returns the 20 most recent mentions (tweets containing a users's @screen_name) for the authenticating user. The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com. This method can only return up to 800 tweets. See Working with Timelines for.</td>
+                    </tr>
+                </table>
+            </article>
+            -->
+            <script id="article" type="text/x-handlebars-template">
+                {{#each midias}}
+                    <article class="content">
+                        <h4>{{ tipo_midia }}</h4>
+                        <p>{{ descricao_midia }}</p>
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Endpoint</th>
+                                <th>Descrição</th>
+                            </tr>
+                            {{#each endpoints}}
+                            <tr>
+                                <td><a href="#">{{ endpoint }}</a></td>
+                                <td>{{ descricao_endpoint }}</td>
+                            </tr>
+                            {{/each}}
+                        </table>
+                    </article>
+                {{/each}}
+            </script>
+        </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-        -->
+        <footer id="pageFooter">
+            
+        </footer>
+
+        <script src="assets/js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/handlebars-v1.3.0.js"></script>
+        <script src="assets/js/main.js"></script>
+
     </body>
 </html>	

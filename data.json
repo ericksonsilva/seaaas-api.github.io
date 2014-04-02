@@ -1,0 +1,10 @@
+{
+    "tipo_midia": "Texto",
+    "descricao_midia": "Descricao|Descricao|Descricao|Descricao|",
+    "endpoints": [
+    	{
+    		"endpoint": "GET xico/tripa",
+    		"descricao_endpoint": "DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|DescricaoEndpoint|"
+    	}
+    ]
+}
